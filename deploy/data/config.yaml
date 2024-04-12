@@ -1,5 +1,5 @@
 system: # 系统配置
-  name: "AlarmPaw" # 服务名称
+  name: "NewBear" # 服务名称
   user: "" # 服务用户名
   password: "" # 服务密码
   host: "0.0.0.0" # 服务地址
