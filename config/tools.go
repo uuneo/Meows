@@ -16,9 +16,6 @@ func VerifyMap(data map[string]string, key string) string {
 	if value, ok := data[key]; ok {
 		return value
 	}
-	if key == "body" {
-		return "body"
-	}
 	return ""
 }
 
