@@ -52,7 +52,7 @@ apple: # 复制项目中的配置，不需要修改，仅在自己编译app时�
 ```
 
 ## Docker部署
-# 因为国内情况复杂，如果下载不了镜像使用我的镜像地址，先把镜像拉取下来
+### 因为国内情况复杂，如果下载不了镜像使用我的镜像地址，先把镜像拉取下来
 
 ```shell
 docker pull crpi-qe87peuqqnyljim6.cn-shanghai.personal.cr.aliyuncs.com/neouu/pushback
