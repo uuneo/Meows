@@ -37,8 +37,8 @@ jobs:
             linux/arm64
             linux/amd64
           tags: |
-            uuneo/newbear:latest
-            uuneo/newbear:${{ steps.vars.outputs.build_version }}
+            uuneo/pushback:latest
+            uuneo/pushback:${{ steps.vars.outputs.build_version }}
           push: true
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
