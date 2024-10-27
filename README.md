@@ -51,21 +51,17 @@ apple: # 复制项目中的配置，不需要修改，仅在自己编译app时�
   ./main
 ```
 
-
-
-
-
 ## Docker部署
 # 因为国内情况复杂，如果下载不了镜像使用我的镜像地址，先把镜像拉取下来
 
 ```shell
-	docker pull crpi-qe87peuqqnyljim6.cn-shanghai.personal.cr.aliyuncs.com/neouu/pushback
-	docker tag crpi-qe87peuqqnyljim6.cn-shanghai.personal.cr.aliyuncs.com/neouu/pushback neouu/pushback
+docker pull crpi-qe87peuqqnyljim6.cn-shanghai.personal.cr.aliyuncs.com/neouu/pushback
+docker tag crpi-qe87peuqqnyljim6.cn-shanghai.personal.cr.aliyuncs.com/neouu/pushback neouu/pushback
 ```
 
 
 ```shell
-  docker run -d --name alarm-paw-server -p 8080:8080 -v ./data:/data  --restart=always  neouu/pushback:latest
+docker run -d --name alarm-paw-server -p 8080:8080 -v ./data:/data  --restart=always  neouu/pushback:latest
 ```
 
 ## Docker-compose部署
@@ -74,7 +70,7 @@ apple: # 复制项目中的配置，不需要修改，仅在自己编译app时�
 
 ### 启动
 ```shell
-  docker-compose up -d
+docker-compose up -d
 ```
 
 
