@@ -2,7 +2,7 @@ package config
 
 import "github.com/spf13/viper"
 
-// URL > QUERY > POST
+// URL > QUERY > POST > BODY
 
 const (
 	LevelA = "active"
