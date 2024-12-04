@@ -11,14 +11,15 @@ func main() {
 	gin.SetMode(config.LocalConfig.System.Mode)
 
 	router := gin.Default()
+	// App内部使用
 	router.GET("/health", func(c *gin.Context) { c.JSON(http.StatusOK, "ok") })
 	router.GET("/ping", controller.Ping)
 	router.GET("/server", controller.QRCode)
 	router.POST("/register", controller.RegisterController)
 	router.GET("/info", controller.GetInfo).Use(Auth())
-	router.POST("/push", controller.BaseController).Use(Auth())
 	router.POST("/change", controller.ChangeKeyHandler).Use(Auth())
-
+	// 推送请求
+	router.POST("/push", controller.BaseController)
 	router.GET("/:deviceKey/:params1/:params2/:params3", controller.BaseController).Use(Auth())
 	router.POST("/:deviceKey/:params1/:params2/:params3", controller.BaseController).Use(Auth())
 	router.GET("/:deviceKey/:params1/:params2", controller.BaseController).Use(Auth())
