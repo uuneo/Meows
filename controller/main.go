@@ -189,7 +189,7 @@ func Ping(c *gin.Context) {
 func GetInfo(c *gin.Context) {
 	devices, _ := database.DB.CountAll()
 	c.JSON(200, map[string]interface{}{
-		"version": "1.0.0",
+		"version": "0.2.0",
 		"build":   "",
 		"arch":    runtime.GOOS + "/" + runtime.GOARCH,
 		"commit":  "",
