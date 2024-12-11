@@ -59,7 +59,6 @@ func Auth() gin.HandlerFunc {
 				"status":  "failed",
 				"message": "I'm a teapot",
 			})
-
 			c.Abort()
 			return
 		}

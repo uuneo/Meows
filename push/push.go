@@ -13,9 +13,10 @@ func Push(params map[string]string, pushType apns2.EPushType) error {
 	// 创建 payload，并填充通知标题、内容、声音和类别等字段
 	pl := payload.NewPayload().
 		AlertTitle(config.VerifyMap(params, config.Title)).
+		AlertSubtitle(config.VerifyMap(params, config.Subtitle)).
 		AlertBody(config.VerifyMap(params, config.Body)).
 		Sound(config.VerifyMap(params, config.Sound)).
-		Category(config.VerifyMap(params, config.Category))
+		Category(config.CategoryDefault)
 
 	// 添加自定义参数
 	addCustomParams(pl, params)
@@ -53,7 +54,6 @@ func addCustomParams(pl *payload.Payload, params map[string]string) {
 		config.Title:       {},
 		config.Body:        {},
 		config.Sound:       {},
-		config.Category:    {},
 	}
 
 	for k, v := range params {

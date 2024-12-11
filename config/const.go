@@ -15,16 +15,16 @@ const (
 	AutoCopyDefault  = "0"                      // 默认自动复制
 	IsArchiveDefault = "1"                      // 默认归档
 	DeviceKey        = "devicekey"              // 设备key
-	DeviceToken      = "devicetoken"            // 设备token
-	Category         = "category"               // 类别
+	DeviceToken      = "devicetoken"            // 设备token 	// 类别
 	Title            = "title"                  // 标题
-	Body             = "body"                   // 内容
-	IsArchive        = "isarchive"              // 是否归档
-	Group            = "group"                  // 组
-	Sound            = "sound"                  // 声音
-	AutoCopy         = "autocopy"               // 自动复制
-	Level            = "level"                  // 等级
-	CipherText       = "ciphertext"             // 密文
+	Subtitle         = "subtitle"
+	Body             = "body"       // 内容
+	IsArchive        = "isarchive"  // 是否归档
+	Group            = "group"      // 组
+	Sound            = "sound"      // 声音
+	AutoCopy         = "autocopy"   // 自动复制
+	Level            = "level"      // 等级
+	CipherText       = "ciphertext" // 密文
 )
 
 const (
@@ -33,13 +33,6 @@ const (
 	TestFilePath    = "/data/config.yaml"
 	ReleaseFilePath = "/data/config.yaml"
 )
-
-//const (
-//	FilePathEnv     = "PUSHBACK_CONFIG"
-//	DefaultFilePath = "./config/config.yaml"
-//	TestFilePath    = "./config/config.yaml"
-//	ReleaseFilePath = "./config/config.yaml"
-//)
 
 var (
 	LocalConfig *Config

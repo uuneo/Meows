@@ -105,8 +105,8 @@ func ToParamsHandler(c *gin.Context) (map[string]string, error) {
 		paramsResult[config.Body] = c.Params[2].Value
 	case 4:
 		paramsResult[config.DeviceKey] = c.Params[0].Value
-		paramsResult[config.Category] = c.Params[1].Value
-		paramsResult[config.Title] = c.Params[2].Value
+		paramsResult[config.Title] = c.Params[1].Value
+		paramsResult[config.Subtitle] = c.Params[2].Value
 		paramsResult[config.Body] = c.Params[3].Value
 	}
 
@@ -143,8 +143,6 @@ func ToParamsHandler(c *gin.Context) (map[string]string, error) {
 	setDefault(paramsResult, config.AutoCopy, config.AutoCopyDefault)
 
 	setDefault(paramsResult, config.Level, config.LevelA)
-
-	setDefault(paramsResult, config.Category, config.CategoryDefault)
 
 	setDefault(paramsResult, config.Body, "-No Content-")
 
