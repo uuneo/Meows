@@ -65,6 +65,14 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
     }
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+#if os(iOS)
+
+		if (message.body as! String != "open-safari") {
+			return
+		}
+		UIApplication.shared.open(URL(string: "https://pushback.uuneo.com")!, options: [:])
+#endif
+
 #if os(macOS)
         if (message.body as! String != "open-preferences") {
             return

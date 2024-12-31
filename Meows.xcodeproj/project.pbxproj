@@ -58,6 +58,7 @@
 		195CFBE52D24471F00B83663 /* Meows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195CFBF12D24471F00B83663 /* Meows Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Meows Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		195CFBFB2D24471F00B83663 /* Meows Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Meows Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		199855AB2D24611E00A6306B /* Meows--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meows--macOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -227,6 +228,7 @@
 		195CFBB62D24471D00B83663 = {
 			isa = PBXGroup;
 			children = (
+				199855AB2D24611E00A6306B /* Meows--macOS--Info.plist */,
 				195CFBBB2D24471D00B83663 /* Shared (App) */,
 				195CFBC42D24471F00B83663 /* Shared (Extension) */,
 				195CFBD52D24471F00B83663 /* iOS (App) */,
@@ -538,7 +540,7 @@
 				DEVELOPMENT_TEAM = FUWV6U942Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Meows;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pushback+";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -575,7 +577,7 @@
 				DEVELOPMENT_TEAM = FUWV6U942Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Meows;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pushback+";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -678,7 +680,9 @@
 				DEVELOPMENT_TEAM = FUWV6U942Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Meows--macOS--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Meows;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -712,7 +716,9 @@
 				DEVELOPMENT_TEAM = FUWV6U942Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Meows--macOS--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Meows;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
